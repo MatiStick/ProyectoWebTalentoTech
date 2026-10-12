@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- HEADER + NAV -->
+    <header>
+    <h1>Mi Producto Pro</h1>
+    <nav>
+      <!-- Lista desordenada con enlaces de navegación (Punto 5) -->
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seccion Inicio / Multimedia -->
+    <section id="inicio">
+      <h2>Descubrí lo que tenemos para vos</h2>
+      <!-- Multimedia: imagen, video o iframe (Punto 5) -->
+      <img src="assets/BarraHerramientas.png" alt="Imagen del producto o servicio" width="100%">
+    </section>
+
+    <!-- Seccion Productos (Organizada con Flexbox según Punto 4) -->
+    <section id="productos" class="productos-container">
+      <h2>Nuestros Productos</h2>
+      <div class="cards-wrapper">
+        <div class="card">
+          <img src="assets/HachaMano.png" alt="Producto 1">
+          <h3>Hacha de mano</h3>
+          <p>Compacta, liviana y resistente. Ideal para podar, cortar leña pequeña o llevar de campamento con un agarre ergonómico y seguro.</p>
+        </div>
+        <div class="card">
+          <img src="assets/Machete.png" alt="Producto 2">
+          <h3>Machete de sierra</h3>
+          <p>Herramienta versátil de doble función: filo de corte profundo en un lado y sierra de alto rendimiento en el lomo. Perfecto para maleza densa.</p>
+        </div>
+        <div class="card">
+          <img src="assets/Palas.png" alt="Producto 3">
+          <h3>Combo Kit de Palas</h3>
+          <p>El combo ideal para todo tipo de trabajo: incluye pala de punta para penetrar y cavar en suelos duros, y pala de carga diseñada para mover grandes volúmenes de materiales con máxima eficiencia.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion Reseñas (Organizada con CSS Grid según Punto 4) -->
+    <section id="resenas" class="resenas-container">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <div class="grid-resenas">
+        <div class="resena-item">"Excelente producto!"</div>
+        <div class="resena-item">"Llegó rapidísimo y la calidad es brutal."</div>
+        <div class="resena-item">"Súper recomendado."</div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto-section">
+     <h2>Contacto</h2>
+     <p class="contacto-subtitulo">¿Tenés alguna consulta o querés realizar un pedido? Escribinos y te respondemos a la brevedad.</p>
+  
+     <form action="https://formspree.io/f/mjygelar" method="POST" class="formulario-contacto">
+    
+     <div class="input-group">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="name" placeholder="Ej: Juan Pérez" required>
+     </div>
+
+     <div class="input-group">
+       <label for="email">Correo electrónico</label>
+       <input type="email" id="email" name="_replyto" placeholder="ejemplo@correo.com" required>
+     </div>
+
+     <div class="input-group">
+       <label for="mensaje">Mensaje</label>
+       <textarea id="mensaje" name="message" rows="5" placeholder="Escribí tu mensaje o consulta acá..." required></textarea>
+     </div>
+
+     <button type="submit" class="btn-enviar">Enviar mensaje</button>
+     </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+body {
+  font-family: 'Roboto', sans-serif; /* Google Fonts (Punto 3) */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header, Footer y Nav */
+header {
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Propiedad background degradado (Punto 3) */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sección Productos con Flexbox (Punto 4) */
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+}
+
+/* Sección Reseñas con Grid (Punto 4) */
+.grid-resenas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.resena-item {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Media Queries para Sección Contacto Responsiva (Punto 4) */
+.contacto-section form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto-section form {
+    width: 90%;
+  }
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.card img {
+  width: 100%;       
+  height: 180px;     
+  object-fit: cover; 
+  border-radius: 4px;
+}
+
+#inicio h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#productos h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#resenas h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contacto h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#inicio img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Contenedor principal de la sección de contacto */
+.contacto-section {
+  background-color: #f8f9fa; /* Fondo claro y limpio */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contacto-section h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.contacto-subtitulo {
+  color: #6c757d;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+/* Tarjeta del Formulario */
+.formulario-contacto {
+  max-width: 550px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* Sombra elegante y suave */
+  text-align: left;
+}
+
+/* Campos del Formulario */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #333;
+  background-color: #fafafa;
+  transition: all 0.3s ease;
+  box-sizing: border-box; /* Asegura que el padding no desborde el ancho */
+}
+
+/* Efecto Focus al hacer clic en los campos */
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: #2a5298; /* Cambia al color principal de tu marca */
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.15); /* Resplandor suave */
+}
+
+/* Botón Enviar */
+.btn-enviar {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-enviar:hover {
+  transform: translateY(-2px); /* Pequeña elevación al pasar el mouse */
+  box-shadow: 0 5px 15px rgba(42, 82, 152, 0.3);
+}
+
+.btn-enviar:active {
+  transform: translateY(0);
+}
+
